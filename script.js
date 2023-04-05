@@ -17,6 +17,7 @@ function select(link){
 }
 
 function open(){
+    const rating = document.querySelector(".rating")
     const num = localStorage.getItem('rating')
     rating.innerText = num
     console.log(num);
