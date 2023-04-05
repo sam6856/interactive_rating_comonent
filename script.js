@@ -1,5 +1,4 @@
 var selection
-var number = document.querySelector(".number")
 var submit = document.querySelector(".submit")
 var links = document.querySelectorAll(".num")
 
@@ -13,8 +12,8 @@ function select(link){
     selection = link.innerText
     console.log(selection)
 
-    number.value = selection.toString()
-    localStorage.setItem('rating', number.value)
+    const number = selection.toString()
+    localStorage.setItem('rating', number)
 }
 
 function open(){
